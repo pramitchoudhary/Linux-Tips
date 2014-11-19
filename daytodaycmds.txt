@@ -1,3 +1,14 @@
 1. Download using CLI:
 * curl --remote-name http://<relveant_link>
 * wget http://<relveant_link>
+
+2.File handling:
+* Manage DOS file in Linux
+  sed 's/.$//' <file_name>
+* File contents in reverse
+  sed -n '1!G;h;$p' <file_name>
+* Add line number for non-empty lines in a file
+  sed '/./=' <file_name> | sed 'N; s/\n/ /'
+
+3. Comparing files:
+* ignore white spaces: diff -w <file3.txt> <file2.txt>
