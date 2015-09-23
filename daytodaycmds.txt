@@ -12,3 +12,7 @@
 
 3. Comparing files:
 * ignore white spaces: diff -w <file3.txt> <file2.txt>
+
+4. counting words 
+*separated by comma: cat <file_name> | tr ',' ' ' | wc -w
+*separated by space wc -w
