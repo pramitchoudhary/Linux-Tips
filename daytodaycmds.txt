@@ -18,3 +18,8 @@
 *separated by space wc -w
 
 5. awk -F\| '{print NF}'
+
+6. Remove the first line in a csv
+
+7. Count unique entries based on first column
+cat <fileName> | awk '{print $1}' | uniq | wc -l
