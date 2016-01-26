@@ -23,3 +23,6 @@
 
 7. Count unique entries based on first column
 cat <fileName> | awk '{print $1}' | uniq | wc -l
+
+8. search and replace strings in a file
+sed -i.bak '/pattern to match/d' ./infile
